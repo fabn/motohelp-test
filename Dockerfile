@@ -4,12 +4,10 @@ FROM ruby:2.3.8
 LABEL maintainer="Fabio Napoleoni <f.napoleoni@gmail.com>"
 # Use unattended upgrades
 ENV DEBIAN_FRONTEND=noninteractive
-# Bundler updated version
-ENV BUNDLER_VERSION 1.17.2
 # Node version
 ENV NODE_MAJOR=8
 # Debian repository versions
-ENV YARN_VERSION=1.15.2-1
+ENV YARN_VERSION=1.19.0-1
 # Startup files
 ENV PORT 3000
 # Update package cache and install https transport
