@@ -1,5 +1,5 @@
 # Common shared setup
-FROM ruby:2.7.0
+FROM ruby:2.6.5
 # Maintainer info
 LABEL maintainer="Fabio Napoleoni <f.napoleoni@gmail.com>"
 # Use unattended upgrades
