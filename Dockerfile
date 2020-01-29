@@ -1,11 +1,11 @@
 # Common shared setup
-FROM ruby:2.3.8
+FROM ruby:2.7.0
 # Maintainer info
 LABEL maintainer="Fabio Napoleoni <f.napoleoni@gmail.com>"
 # Use unattended upgrades
 ENV DEBIAN_FRONTEND=noninteractive
 # Node version
-ENV NODE_MAJOR=8
+ENV NODE_MAJOR=10
 # Debian repository versions
 ENV YARN_VERSION=1.19.0-1
 # Startup files
@@ -33,6 +33,6 @@ RUN apt-get install -y --no-install-recommends \
   unzip \
   zlib1g-dev \
   libxslt-dev \
-  mysql-client
+  default-mysql-client
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
